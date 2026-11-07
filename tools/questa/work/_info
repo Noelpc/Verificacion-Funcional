@@ -10,12 +10,12 @@ Z0 !s99 nomlopt
 !i10e 25
 !i10f 100
 cModel Technology
-Z1 d/mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/mp6134/tools/questa
+Z1 d/mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/Verificacion-Funcional/tools/questa
 T_opt
-!s110 1794091412
-V:`LRNIKFDN8ZmzH9Ha@ee2
+!s110 1794094600
+V56FY?5n?6Sm61Y;J2lfFS2
 04 6 4 work cpu_tb fast 0
-=1-005056aa9df9-6aefa993-9129f-c3f95
+=1-005056aa9df9-6aefb607-f243f-c6992
 R0
 !s12b OEM100
 !s124 OEM100
@@ -24,17 +24,17 @@ Z2 tCvgOpt 0
 n@_opt
 OL;O;2023.3;77
 vadder32
-Z3 2/mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/mp6134/tutorial1/cpu_tb.sv|/mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/mp6134/tutorial1/cpu.sv|/mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/mp6134/tutorial1/alu.sv|/mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/mp6134/tutorial1/imem.sv
+Z3 2/mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/Verificacion-Funcional/tutorial1/cpu_tb.sv|/mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/Verificacion-Funcional/tutorial1/cpu.sv|/mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/Verificacion-Funcional/tutorial1/alu.sv|/mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/Verificacion-Funcional/tutorial1/imem.sv
 Z4 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z5 !s110 1794091408
+Z5 !s110 1794094597
 !i10b 1
 !s100 ;9Roa_;VicQEZcNCe08>n0
-IJ4a>f^HY^=0>YOWnmnzQ]2
+I00KW[;nX]Ul_hH>QJXh>73
 S1
 R1
 Z6 w1794086595
-Z7 8/mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/mp6134/tutorial1/cpu.sv
-Z8 F/mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/mp6134/tutorial1/cpu.sv
+Z7 8/mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/Verificacion-Funcional/tutorial1/cpu.sv
+Z8 F/mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/Verificacion-Funcional/tutorial1/cpu.sv
 !i122 0
 L0 158 9
 Z9 VDg1SIo80bB@j0V0VzS_@n1
@@ -42,11 +42,12 @@ Z10 OL;L;2023.3;77
 r1
 !s85 0
 31
-Z11 !s108 1794091408.000000
-Z12 !s107 /mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/mp6134/tutorial1/imem.sv|/mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/mp6134/tutorial1/alu.sv|/mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/mp6134/tutorial1/cpu.sv|/mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/mp6134/tutorial1/cpu_tb.sv|
-Z13 !s90 -sv|/mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/mp6134/tutorial1/cpu_tb.sv|/mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/mp6134/tutorial1/cpu.sv|/mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/mp6134/tutorial1/alu.sv|/mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/mp6134/tutorial1/imem.sv|
+Z11 !s108 1794094597.000000
+Z12 !s107 /mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/Verificacion-Funcional/tutorial1/imem.sv|/mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/Verificacion-Funcional/tutorial1/alu.sv|/mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/Verificacion-Funcional/tutorial1/cpu.sv|/mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/Verificacion-Funcional/tutorial1/cpu_tb.sv|
+Z13 !s90 +cover|-sv|/mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/Verificacion-Funcional/tutorial1/cpu_tb.sv|/mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/Verificacion-Funcional/tutorial1/cpu.sv|/mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/Verificacion-Funcional/tutorial1/alu.sv|/mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/Verificacion-Funcional/tutorial1/imem.sv|
 !i113 0
-Z14 o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z14 !s102 +cover
+Z15 o+cover -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R2
 vadder_ripple_carry
 R3
@@ -54,12 +55,12 @@ R4
 R5
 !i10b 1
 !s100 [k?``RWkdFDo;oJnn9YIi2
-IY4zQmak=VC@Fl6c@lAA8m1
+IVFYAbdjfTJ@25gTW`2ZBj0
 S1
 R1
-Z15 w1794081818
-Z16 8/mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/mp6134/tutorial1/alu.sv
-Z17 F/mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/mp6134/tutorial1/alu.sv
+Z16 w1794081818
+Z17 8/mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/Verificacion-Funcional/tutorial1/alu.sv
+Z18 F/mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/Verificacion-Funcional/tutorial1/alu.sv
 !i122 0
 L0 73 42
 R9
@@ -72,6 +73,7 @@ R12
 R13
 !i113 0
 R14
+R15
 R2
 valu
 R3
@@ -79,12 +81,12 @@ R4
 R5
 !i10b 1
 !s100 HCfR;=c@YAH]^mzl2PUkz1
-IQcQ7]5a7@6=07z:3I[jO03
+Ih8[lPeSa8DN9hakNc?fb22
 S1
 R1
-R15
 R16
 R17
+R18
 !i122 0
 L0 9 48
 R9
@@ -97,6 +99,7 @@ R12
 R13
 !i113 0
 R14
+R15
 R2
 vcontrol_unit
 R3
@@ -104,7 +107,7 @@ R4
 R5
 !i10b 1
 !s100 0SmZOkO?2Qc_KIYoI^QQ00
-Ij4_<MOBKd>eQiCQ@e@L2e3
+I84^=R7SElh<R:_Gd?;:UD3
 S1
 R1
 R6
@@ -122,6 +125,7 @@ R12
 R13
 !i113 0
 R14
+R15
 R2
 vcpu
 R3
@@ -129,7 +133,7 @@ R4
 R5
 !i10b 1
 !s100 ?QMA9Qn6oz3N>QMmL[`Zc1
-IjK1XME_GDSA=iLCJ2cUkc3
+I7G<?^gCO0dI1@i6eaEO?d0
 S1
 R1
 R6
@@ -147,6 +151,7 @@ R12
 R13
 !i113 0
 R14
+R15
 R2
 vcpu_tb
 R3
@@ -154,12 +159,12 @@ R4
 R5
 !i10b 1
 !s100 @=@K9oaW50fhMG_foolD>2
-IZdh6C5cmVN84kIZJ8S5Ui0
+IO]eZ@GB[`Y0F`2G^BgUQH1
 S1
 R1
 w1794091173
-8/mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/mp6134/tutorial1/cpu_tb.sv
-F/mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/mp6134/tutorial1/cpu_tb.sv
+8/mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/Verificacion-Funcional/tutorial1/cpu_tb.sv
+F/mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/Verificacion-Funcional/tutorial1/cpu_tb.sv
 !i122 0
 L0 9 52
 R9
@@ -172,6 +177,7 @@ R12
 R13
 !i113 0
 R14
+R15
 R2
 vdmem
 R3
@@ -179,7 +185,7 @@ R4
 R5
 !i10b 1
 !s100 XOPgDTNb?8nM4UBO^OF3j3
-I6GFjE=afoDo_ZlBBmOFZn3
+I0Y47JAG?RAV6cLea96HA^1
 S1
 R1
 R6
@@ -197,6 +203,7 @@ R12
 R13
 !i113 0
 R14
+R15
 R2
 vExtend
 R3
@@ -204,7 +211,7 @@ R4
 R5
 !i10b 1
 !s100 M[9nGImJ7`254=U;WaO_M0
-IGbh3KeKlEb<Z;S<5SFPCm1
+IQhWD6TQ:3i<T63CkZHSof1
 S1
 R1
 R6
@@ -222,6 +229,7 @@ R12
 R13
 !i113 0
 R14
+R15
 R2
 n@extend
 vfull_adder
@@ -230,12 +238,12 @@ R4
 R5
 !i10b 1
 !s100 AD>L[W;Ni=eeU;n[E3i_60
-IjV114;H2SeDACXNg4aClQ3
+IMFGD8KQ=G?Z14Jm7_:_oE1
 S1
 R1
-R15
 R16
 R17
+R18
 !i122 0
 L0 59 12
 R9
@@ -248,20 +256,21 @@ R12
 R13
 !i113 0
 R14
+R15
 R2
 vimem
 R3
 R4
-DXx4 work 9 riscv_asm 0 22 glJTg6:0][FFez@XfdnL[2
+DXx4 work 9 riscv_asm 0 22 6d0ZDmHmTGV]K65S8h8Q?2
 R5
 !i10b 1
-!s100 Sa@7R_UL]z8=NeLc6L5CX3
-ICWFPYi>9e?QODRabTJ[gz0
+!s100 i98GZhBRBWVXLDAP[aC542
+Il4Li2n[=BhF:NWfc>@=VP0
 S1
 R1
-Z18 w1794091125
-Z19 8/mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/mp6134/tutorial1/imem.sv
-Z20 F/mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/mp6134/tutorial1/imem.sv
+Z19 w1794091125
+Z20 8/mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/Verificacion-Funcional/tutorial1/imem.sv
+Z21 F/mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/Verificacion-Funcional/tutorial1/imem.sv
 !i122 0
 L0 97 19
 R9
@@ -274,6 +283,7 @@ R12
 R13
 !i113 0
 R14
+R15
 R2
 vmux32
 R3
@@ -281,7 +291,7 @@ R4
 R5
 !i10b 1
 !s100 IeoDfincUAI7fZeEVGO8X3
-IjKRWdJ9dYTLHkR[kLAT8`1
+Im=ia_eZC]ac15DAJ4DOZk2
 S1
 R1
 R6
@@ -299,6 +309,7 @@ R12
 R13
 !i113 0
 R14
+R15
 R2
 vmux_alu_out
 R3
@@ -306,7 +317,7 @@ R4
 R5
 !i10b 1
 !s100 ;5lF3GY8^jE5IKP:jok9Y0
-I?JHW<LQ=o<X1I@mBAC7QI2
+I>o78F:2nI<d@1n>M=Jbgi1
 S1
 R1
 R6
@@ -324,6 +335,7 @@ R12
 R13
 !i113 0
 R14
+R15
 R2
 vmux_out
 R3
@@ -331,12 +343,12 @@ R4
 R5
 !i10b 1
 !s100 IT1Q80ab9eiD;B8n30ToY3
-INk@]8JKi1^NNfk4KV[S<m2
+I]K6CicRl?i1LSCiRfSf`;2
 S1
 R1
-R15
 R16
 R17
+R18
 !i122 0
 L0 117 24
 R9
@@ -349,6 +361,7 @@ R12
 R13
 !i113 0
 R14
+R15
 R2
 vpc
 R3
@@ -356,7 +369,7 @@ R4
 R5
 !i10b 1
 !s100 @L[m^>QeZHj4hFo0<QMd80
-I4]]l]H4:Sc8Jmm7AZB>4`3
+I?2L0HCA60Yb63?__=2aPz2
 S1
 R1
 R6
@@ -374,6 +387,7 @@ R12
 R13
 !i113 0
 R14
+R15
 R2
 vregister_bank
 R3
@@ -381,7 +395,7 @@ R4
 R5
 !i10b 1
 !s100 i@Gi_F[gODNSik01SNH263
-I9KHE@bloTC>D>L4J<QZBa2
+I4=1lmCBnkU9hGGOP>@]Oh3
 S1
 R1
 R6
@@ -399,6 +413,7 @@ R12
 R13
 !i113 0
 R14
+R15
 R2
 Xriscv_asm
 R3
@@ -406,15 +421,15 @@ R4
 R5
 !i10b 1
 !s100 ]=m?XR<oO2QnM3GLRN9RS0
-IglJTg6:0][FFez@XfdnL[2
+I6d0ZDmHmTGV]K65S8h8Q?2
 S1
 R1
-R18
 R19
 R20
+R21
 !i122 0
 L0 14 0
-VglJTg6:0][FFez@XfdnL[2
+V6d0ZDmHmTGV]K65S8h8Q?2
 R10
 r1
 !s85 0
@@ -424,6 +439,7 @@ R12
 R13
 !i113 0
 R14
+R15
 R2
 vZeroExt
 R3
@@ -431,12 +447,12 @@ R4
 R5
 !i10b 1
 !s100 _>[QGm2S>b;0^6T<[BIc33
-IBUMiBOL>Ym3ADR74n2fn>1
+IJ5PFjZ6VS7gEDa4HngU5o1
 S1
 R1
-R15
 R16
 R17
+R18
 !i122 0
 L0 143 9
 R9
@@ -449,5 +465,6 @@ R12
 R13
 !i113 0
 R14
+R15
 R2
 n@zero@ext

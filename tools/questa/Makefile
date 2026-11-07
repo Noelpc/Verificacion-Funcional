@@ -17,11 +17,12 @@ cpu_v01: clean
 	source $(PROJECT_ROOT)/tools/questa/setup.sh
 	vlib work
 	vmap work work
-	vlog -sv $(PROJECT_ROOT)/tutorial1/cpu_tb.sv \
+	vlog +cover -sv $(PROJECT_ROOT)/tutorial1/cpu_tb.sv \
 	    $(PROJECT_ROOT)/tutorial1/cpu.sv \
 	    $(PROJECT_ROOT)/tutorial1/alu.sv \
 	    $(PROJECT_ROOT)/tutorial1/imem.sv 
-	vsim -c work.cpu_tb -do "run -all; quit -f;"
+
+	vsim -sv_seed 100 -c -coverage work.cpu_tb -do "coverage save -onexit coverage.ucdb; run -all; quit -f;"
 
 # single-cycle riscv cpu
 cpu: clean
