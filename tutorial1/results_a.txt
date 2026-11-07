@@ -1,0 +1,100 @@
+[nperez@redhat003 questa]$ make imem_tb
+rm ./vsim.wlf -f
+rm ./vsim.dbg -f
+rm ./modelsim.ini -f
+rm ./coverage.ucdb -f
+rm ./coverage.txt -f
+rm ./work/ -rf
+rm ./transcript -f
+source /mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/mp6134/tools/questa/setup.sh
+vlib work
+vmap work work
+vlog -sv /mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/mp6134/tutorial1/imem_tb.sv /mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/mp6134/tutorial1/imem.sv
+vsim -c work.imem_tb -do "run -all; quit -f;"
+QuestaSim-64 vmap 2023.3 Lib Mapping Utility 2023.07 Jul 17 2023
+vmap work work 
+Copying /mnt/vol_NFS_mentorinstall/siemens/questa/questasim/linux_x86_64/../modelsim.ini to modelsim.ini
+Modifying modelsim.ini
+QuestaSim-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+Start time: 14:46:48 on Nov 07,2026
+vlog -sv /mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/mp6134/tutorial1/imem_tb.sv /mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/mp6134/tutorial1/imem.sv 
+-- Compiling module imem_tb
+-- Compiling package riscv_asm
+-- Compiling module imem
+-- Importing package riscv_asm
+
+Top level modules:
+	imem_tb
+End time: 14:46:48 on Nov 07,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 2023.3
+
+# vsim -c work.imem_tb -do "run -all; quit -f;" 
+# Start time: 14:46:51 on Nov 07,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# //  Questa Sim-64
+# //  Version 2023.3 linux_x86_64 Jul 17 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.riscv_asm(fast)
+# Loading work.imem_tb(fast)
+# run -all
+# ADD:	00000001011111011000010000110011
+# ADDI:	00011111010001111000111100010011
+# SLT:	00000001010000100010010000010011
+# ADDI:	10000000111010011000111010010011
+# SUB:	01000000110011001000110110110011
+# ADD:	00000001111000011000101010110011
+# SUB:	01000000000010110000010110110011
+# ADD:	00000001110000011000001100110011
+# SUB:	01000001100010101000000010110011
+# SUB:	01000001100000000000001100110011
+# SUB:	01000000111001010000111110110011
+# ADD:	00000000001110101000011010110011
+# OR:	00000000010111111110010100010011
+# AND:	00000001000010111111010100010011
+# ADD:	00000000111100101000100110110011
+# AND:	00000000111000011111010000010011
+# ADDI:	00001110101000101000101100010011
+# AND:	00000001111011100111111100010011
+# AND:	00000000100111000111100010010011
+# SLT:	00000001110100010010010000010011
+# AND:	00000000100000101111001110010011
+# ADD:	00000000001001110000101100110011
+# ADD:	00000001101000000000001000110011
+# SLT:	00000001110100010010000010010011
+# AND:	00000000011000111111100110010011
+# AND:	00000000111100011111101010010011
+# SUB:	01000001010010000000010110110011
+# SUB:	01000000101011110000110010110011
+# SLT:	00000000111110001010101010010011
+# ADDI:	11011111101110000000100010010011
+# OR:	00000000000000010110110010010011
+# AND:	00000000011010000111000100010011
+# SUB:	01000000100101001000101100110011
+# AND:	00000000000010011111011010010011
+# ADDI:	11111010110010111000000110010011
+# SUB:	01000000000101100000001110110011
+# OR:	00000001000011100110011100010011
+# OR:	00000000100111000110000010010011
+# SUB:	01000000101001100000001100110011
+# ADDI:	00110001101101110000010000010011
+# ** Note: $finish    : /mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/mp6134/tutorial1/imem.sv(109)
+#    Time: 400 ns  Iteration: 0  Instance: /imem_tb/imem1
+# End time: 14:46:52 on Nov 07,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+[nperez@redhat003 questa]$ 
+

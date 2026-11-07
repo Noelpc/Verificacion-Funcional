@@ -1,0 +1,824 @@
+# vsim -c work.cpu_tb -do "run -all; quit -f;" 
+# Start time: 16:43:31 on Nov 07,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# //  Questa Sim-64
+# //  Version 2023.3 linux_x86_64 Jul 17 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.riscv_asm(fast)
+# Loading work.cpu_tb(fast)
+# run -all
+# OR:	00000000001101010110111110010011
+# Resultado de la instruccion anterior: 3
+# AND:	00000001101111010111011010010011
+# Resultado de la instruccion anterior: 0
+# ADDI:	00111100111011001000000110010011
+# Resultado de la instruccion anterior: 974
+# SUB:	01000000101110000000111000110011
+# Resultado de la instruccion anterior: 0
+# SLT:	00000001101010100010110110010011
+# Resultado de la instruccion anterior: -1
+# OR:	00000000000110010110001110010011
+# Resultado de la instruccion anterior: 1
+# ADDI:	10011001101011010000001110010011
+# Resultado de la instruccion anterior: -1638
+# SUB:	01000000000000011000001010110011
+# Resultado de la instruccion anterior: 974
+# ADD:	00000001011011000000000110110011
+# Resultado de la instruccion anterior: 0
+# SLT:	00000001010110111010100110010011
+# Resultado de la instruccion anterior: -1
+# SUB:	01000000101001101000100100110011
+# Resultado de la instruccion anterior: 0
+# SUB:	01000001110011111000101110110011
+# Resultado de la instruccion anterior: 3
+# SUB:	01000001111111110000000010110011
+# Resultado de la instruccion anterior: -3
+# ADDI:	11010110011110001000111100010011
+# Resultado de la instruccion anterior: -665
+# OR:	00000000110011111110111000010011
+# Resultado de la instruccion anterior: 15
+# SLT:	00000000100110101010010100010011
+# Resultado de la instruccion anterior: -1
+# AND:	00000001011000100111100010010011
+# Resultado de la instruccion anterior: 0
+# SUB:	01000000011011000000011010110011
+# Resultado de la instruccion anterior: 0
+# OR:	00000000100010110110010100010011
+# Resultado de la instruccion anterior: 8
+# AND:	00000001100000000111111100010011
+# Resultado de la instruccion anterior: 0
+# SUB:	01000000100111110000010110110011
+# Resultado de la instruccion anterior: 0
+# AND:	00000000111111001111010100010011
+# Resultado de la instruccion anterior: 0
+# SLT:	00000001110001101010010000010011
+# Resultado de la instruccion anterior: -1
+# SUB:	01000000011110010000011100110011
+# Resultado de la instruccion anterior: 1638
+# SLT:	00000001110001011010111010010011
+# Resultado de la instruccion anterior: -1
+# SUB:	01000000111010001000101000110011
+# Resultado de la instruccion anterior: -1638
+# SLT:	00000001100110101010101000010011
+# Resultado de la instruccion anterior: -1
+# ADDI:	00111101101101001000100010010011
+# Resultado de la instruccion anterior: 987
+# ADD:	00000000001011010000000000110011
+# Resultado de la instruccion anterior: 2147483632
+# ADDI:	10000100110111101000100010010011
+# Resultado de la instruccion anterior: -1972
+# SLT:	00000001010100101010101000010011
+# Resultado de la instruccion anterior: 0
+# AND:	00000000110111000111100000010011
+# Resultado de la instruccion anterior: 0
+# ADDI:	01001110000001000000110010010011
+# Resultado de la instruccion anterior: 1247
+# OR:	00000000011101001110101110010011
+# Resultado de la instruccion anterior: 7
+# ADD:	00000000100011101000101010110011
+# Resultado de la instruccion anterior: -2
+# ADD:	00000000011111100000011100110011
+# Resultado de la instruccion anterior: -1623
+# SLT:	00000000101001111010010010010011
+# Resultado de la instruccion anterior: -1
+# SLT:	00000000000010011010110000010011
+# Resultado de la instruccion anterior: -1
+# ADDI:	01011001111101111000101110010011
+# Resultado de la instruccion anterior: 1439
+# OR:	00000001011000010110000100010011
+# Resultado de la instruccion anterior: 2147483638
+# SUB:	01000000111000110000011100110011
+# Resultado de la instruccion anterior: 1623
+# ADDI:	01100101101111111000001010010011
+# Resultado de la instruccion anterior: 1630
+# ADDI:	11001100100001110000000000010011
+# Resultado de la instruccion anterior: 799
+# SUB:	01000000001000000000110010110011
+# Resultado de la instruccion anterior: -2147483632
+# SLT:	00000000000001110010000010010011
+# Resultado de la instruccion anterior: 0
+# SUB:	01000000011101101000111000110011
+# Resultado de la instruccion anterior: 1638
+# SUB:	01000000100100101000000000110011
+# Resultado de la instruccion anterior: 1631
+# AND:	00000001001011111111111000010011
+# Resultado de la instruccion anterior: 2
+# AND:	00000000011010001111000000010011
+# Resultado de la instruccion anterior: 4
+# SLT:	00000000000101111010101010010011
+# Resultado de la instruccion anterior: -1
+# ADDI:	10111011111000010000011110010011
+# Resultado de la instruccion anterior: 2147482542
+# OR:	00000000110110111110101100010011
+# Resultado de la instruccion anterior: 1439
+# ADDI:	01000110110101010000101000010011
+# Resultado de la instruccion anterior: 1133
+# AND:	00000000101110101111000100010011
+# Resultado de la instruccion anterior: 11
+# SUB:	01000000111110000000110000110011
+# Resultado de la instruccion anterior: -2147482542
+# AND:	00000001010110010111111010010011
+# Resultado de la instruccion anterior: 0
+# ADDI:	10011111110111001000010110010011
+# Resultado de la instruccion anterior: 2147482125
+# ADD:	00000001010010011000110010110011
+# Resultado de la instruccion anterior: 1132
+# SLT:	00000001001110001010100000010011
+# Resultado de la instruccion anterior: -1
+# ADDI:	01000011111000001000011110010011
+# Resultado de la instruccion anterior: 1086
+# ADDI:	01010010101010000000111100010011
+# Resultado de la instruccion anterior: 1321
+# SLT:	00000000001000111010010010010011
+# Resultado de la instruccion anterior: -1
+# AND:	00000001001101001111001110010011
+# Resultado de la instruccion anterior: 19
+# SLT:	00000000111001110010001100010011
+# Resultado de la instruccion anterior: 0
+# OR:	00000000000010000110011000010011
+# Resultado de la instruccion anterior: -1
+# ADDI:	01101100110111000000111110010011
+# Resultado de la instruccion anterior: -2147480801
+# SUB:	01000001110010101000011010110011
+# Resultado de la instruccion anterior: -3
+# SUB:	01000001011111001000001110110011
+# Resultado de la instruccion anterior: -307
+# ADD:	00000001101010011000011010110011
+# Resultado de la instruccion anterior: -1
+# OR:	00000000101100100110100000010011
+# Resultado de la instruccion anterior: 11
+# ADDI:	10011010100010100000010000010011
+# Resultado de la instruccion anterior: -491
+# SUB:	01000000101001111000100110110011
+# Resultado de la instruccion anterior: 1086
+# AND:	00000001100011111111100110010011
+# Resultado de la instruccion anterior: 24
+# SLT:	00000000010100110010010100010011
+# Resultado de la instruccion anterior: -1
+# SLT:	00000001001000001010011110010011
+# Resultado de la instruccion anterior: -1
+# SUB:	01000001101110100000100100110011
+# Resultado de la instruccion anterior: 1134
+# OR:	00000000001111011110110100010011
+# Resultado de la instruccion anterior: -1
+# OR:	00000000011101001110011010010011
+# Resultado de la instruccion anterior: -1
+# ADD:	00000001101011000000110000110011
+# Resultado de la instruccion anterior: -2147482543
+# SLT:	00000001110100000010011000010011
+# Resultado de la instruccion anterior: -1
+# SLT:	00000000000110111010111000010011
+# Resultado de la instruccion anterior: 0
+# SLT:	00000000001101001010101100010011
+# Resultado de la instruccion anterior: -1
+# AND:	00000000111110011111101100010011
+# Resultado de la instruccion anterior: 8
+# ADD:	00000001000110110000011110110011
+# Resultado de la instruccion anterior: -1964
+# AND:	00000000110100101111011100010011
+# Resultado de la instruccion anterior: 12
+# OR:	00000001000010010110010000010011
+# Resultado de la instruccion anterior: 1150
+# SLT:	00000000111100110010100100010011
+# Resultado de la instruccion anterior: -1
+# SUB:	01000001000010101000010100110011
+# Resultado de la instruccion anterior: -12
+# AND:	00000000011101010111100010010011
+# Resultado de la instruccion anterior: 4
+# OR:	00000000110010000110100110010011
+# Resultado de la instruccion anterior: 15
+# SUB:	01000001101111001000011100110011
+# Resultado de la instruccion anterior: 1133
+# SUB:	01000000000000111000000110110011
+# Resultado de la instruccion anterior: -307
+# OR:	00000001111111000110010010010011
+# Resultado de la instruccion anterior: -2147482529
+# SUB:	01000001001101101000000000110011
+# Resultado de la instruccion anterior: -16
+# ADDI:	00101001001010101000100010010011
+# Resultado de la instruccion anterior: 657
+# OR:	00000001001010110110001000010011
+# Resultado de la instruccion anterior: 26
+# SUB:	01000001000101110000011100110011
+# Resultado de la instruccion anterior: 476
+# OR:	00000000011100000110011000010011
+# Resultado de la instruccion anterior: 7
+# SUB:	01000000011101101000011000110011
+# Resultado de la instruccion anterior: 306
+# AND:	00000001000001111111110100010011
+# Resultado de la instruccion anterior: 16
+# OR:	00000000111001110110000100010011
+# Resultado de la instruccion anterior: 478
+# SLT:	00000000010100100010011100010011
+# Resultado de la instruccion anterior: 0
+# ADDI:	01010111000001000000101000010011
+# Resultado de la instruccion anterior: 2542
+# SUB:	01000001001101011000111100110011
+# Resultado de la instruccion anterior: 2147482110
+# OR:	00000000101111101110010010010011
+# Resultado de la instruccion anterior: 11
+# AND:	00000001101100010111000100010011
+# Resultado de la instruccion anterior: 16
+# AND:	00000001101110000111000010010011
+# Resultado de la instruccion anterior: 11
+# AND:	00000001111100111111010000010011
+# Resultado de la instruccion anterior: 13
+# SUB:	01000000001010110000110100110011
+# Resultado de la instruccion anterior: -2147483624
+# SUB:	01000000110111111000000000110011
+# Resultado de la instruccion anterior: -2147480800
+# AND:	00000001101011011111110110010011
+# Resultado de la instruccion anterior: 26
+# SUB:	01000001001100001000011100110011
+# Resultado de la instruccion anterior: -4
+# OR:	00000000010010111110101010010011
+# Resultado de la instruccion anterior: 1439
+# OR:	00000001110100100110111000010011
+# Resultado de la instruccion anterior: 31
+# SLT:	00000001001000111010000100010011
+# Resultado de la instruccion anterior: -1
+# ADD:	00000001111110111000101010110011
+# Resultado de la instruccion anterior: -2147479362
+# ADDI:	11000110100011110000110010010011
+# Resultado de la instruccion anterior: 2147481190
+# OR:	00000000111000000110010010010011
+# Resultado de la instruccion anterior: 14
+# AND:	00000001000111110111011100010011
+# Resultado de la instruccion anterior: 16
+# OR:	00000000000111100110101000010011
+# Resultado de la instruccion anterior: 31
+# OR:	00000001011001011110000100010011
+# Resultado de la instruccion anterior: 2147482143
+# ADDI:	10011100011100110000100100010011
+# Resultado de la instruccion anterior: -1593
+# OR:	00000000111111111110101010010011
+# Resultado de la instruccion anterior: -2147480801
+# SLT:	00000001101000111010001110010011
+# Resultado de la instruccion anterior: -1
+# AND:	00000001011010001111010000010011
+# Resultado de la instruccion anterior: 16
+# ADDI:	01111101010101000000101010010011
+# Resultado de la instruccion anterior: 2021
+# ADD:	00000000011100001000000100110011
+# Resultado de la instruccion anterior: 10
+# SLT:	00000001001101110010110000010011
+# Resultado de la instruccion anterior: -1
+# SUB:	01000001100011101000011100110011
+# Resultado de la instruccion anterior: 1
+# SUB:	01000000111100010000010100110011
+# Resultado de la instruccion anterior: -2147481700
+# AND:	00000000111100100111011010010011
+# Resultado de la instruccion anterior: 10
+# ADDI:	01110100010111110000011010010011
+# Resultado de la instruccion anterior: -2147483325
+# OR:	00000001111010010110010110010011
+# Resultado de la instruccion anterior: -1569
+# AND:	00000000011011010111100010010011
+# Resultado de la instruccion anterior: 0
+# SLT:	00000000100111101010000000010011
+# Resultado de la instruccion anterior: -1
+# OR:	00000000010100010110000010010011
+# Resultado de la instruccion anterior: 2147483637
+# SUB:	01000001110101110000110000110011
+# Resultado de la instruccion anterior: 1
+# OR:	00000001110001000110000000010011
+# Resultado de la instruccion anterior: 28
+# ADDI:	10110101010111111000010000010011
+# Resultado de la instruccion anterior: -2147481996
+# AND:	00000001011001101111010000010011
+# Resultado de la instruccion anterior: 2
+# SLT:	00000000100011111010001100010011
+# Resultado de la instruccion anterior: -1
+# ADD:	00000001011110001000010010110011
+# Resultado de la instruccion anterior: 1439
+# SUB:	01000001011010110000111000110011
+# Resultado de la instruccion anterior: 0
+# SLT:	00000000110011001010111000010011
+# Resultado de la instruccion anterior: 0
+# ADD:	00000000110010110000010000110011
+# Resultado de la instruccion anterior: 314
+# AND:	00000000000100001111011000010011
+# Resultado de la instruccion anterior: 1
+# ADDI:	00011111000111110000001100010011
+# Resultado de la instruccion anterior: 2147482607
+# SUB:	01000001100011100000000010110011
+# Resultado de la instruccion anterior: -1
+# OR:	00000000010001111110010100010011
+# Resultado de la instruccion anterior: -1964
+# AND:	00000001000011111111100110010011
+# Resultado de la instruccion anterior: 16
+# AND:	00000000101000101111100100010011
+# Resultado de la instruccion anterior: 10
+# OR:	00000000111011010110101110010011
+# Resultado de la instruccion anterior: -2147483618
+# AND:	00000001011001111111111100010011
+# Resultado de la instruccion anterior: 20
+# OR:	00000001001000011110100010010011
+# Resultado de la instruccion anterior: -289
+# ADDI:	11101101000110110000000000010011
+# Resultado de la instruccion anterior: -295
+# OR:	00000000110110001110001010010011
+# Resultado de la instruccion anterior: -289
+# SLT:	00000001001010000010110110010011
+# Resultado de la instruccion anterior: -1
+# SLT:	00000000111011011010010010010011
+# Resultado de la instruccion anterior: -1
+# SUB:	01000001000111001000011110110011
+# Resultado de la instruccion anterior: 2147481479
+# SLT:	00000000111000001010111000010011
+# Resultado de la instruccion anterior: -1
+# SLT:	00000000001000100010010000010011
+# Resultado de la instruccion anterior: 0
+# AND:	00000001000000001111001010010011
+# Resultado de la instruccion anterior: 16
+# OR:	00000001100110111110011100010011
+# Resultado de la instruccion anterior: -2147483617
+# ADDI:	10011111010101010000011110010011
+# Resultado de la instruccion anterior: -3511
+# AND:	00000000100010000111110110010011
+# Resultado de la instruccion anterior: 8
+# AND:	00000000111001100111000100010011
+# Resultado de la instruccion anterior: 0
+# SUB:	01000001000101001000101110110011
+# Resultado de la instruccion anterior: 288
+# SLT:	00000000001100110010011000010011
+# Resultado de la instruccion anterior: 0
+# OR:	00000001110100010110000000010011
+# Resultado de la instruccion anterior: 2147483645
+# ADD:	00000001100101100000000100110011
+# Resultado de la instruccion anterior: 2147481190
+# ADD:	00000001110011101000110100110011
+# Resultado de la instruccion anterior: -1
+# SLT:	00000001010001001010001000010011
+# Resultado de la instruccion anterior: -1
+# SLT:	00000001001111001010111100010011
+# Resultado de la instruccion anterior: 0
+# AND:	00000001111011010111001010010011
+# Resultado de la instruccion anterior: 30
+# OR:	00000000000110101110001100010011
+# Resultado de la instruccion anterior: 2021
+# AND:	00000000100100110111001110010011
+# Resultado de la instruccion anterior: 1
+# ADDI:	10010011111101101000011010010011
+# Resultado de la instruccion anterior: 2147482242
+# AND:	00000001111101011111001100010011
+# Resultado de la instruccion anterior: 31
+# AND:	00000000010000010111011010010011
+# Resultado de la instruccion anterior: 0
+# SLT:	00000000011001011010010010010011
+# Resultado de la instruccion anterior: -1
+# ADD:	00000001001101001000101000110011
+# Resultado de la instruccion anterior: 15
+# OR:	00000001100000000110000110010011
+# Resultado de la instruccion anterior: 24
+# SUB:	01000000101010111000011000110011
+# Resultado de la instruccion anterior: 2252
+# AND:	00000000101100100111110100010011
+# Resultado de la instruccion anterior: 11
+# AND:	00000000100101101111100110010011
+# Resultado de la instruccion anterior: 0
+# AND:	00000000111110110111000010010011
+# Resultado de la instruccion anterior: 8
+# AND:	00000001110001000111110110010011
+# Resultado de la instruccion anterior: 0
+# SUB:	01000000011011101000101110110011
+# Resultado de la instruccion anterior: -31
+# OR:	00000000110100101110010000010011
+# Resultado de la instruccion anterior: 31
+# OR:	00000001010110101110011000010011
+# Resultado de la instruccion anterior: 2037
+# SUB:	01000001110011011000100010110011
+# Resultado de la instruccion anterior: 1
+# SUB:	01000000000000110000110110110011
+# Resultado de la instruccion anterior: 31
+# SLT:	00000000100001110010000100010011
+# Resultado de la instruccion anterior: -1
+# SLT:	00000001110010111010000010010011
+# Resultado de la instruccion anterior: -1
+# SUB:	01000000001110100000001010110011
+# Resultado de la instruccion anterior: -9
+# OR:	00000000010111100110100010010011
+# Resultado de la instruccion anterior: -1
+# SUB:	01000001110110101000011010110011
+# Resultado de la instruccion anterior: 2021
+# ADDI:	10010001010101011000101100010011
+# Resultado de la instruccion anterior: -3340
+# SLT:	00000000101101011010000110010011
+# Resultado de la instruccion anterior: -1
+# OR:	00000001000101010110010100010011
+# Resultado de la instruccion anterior: -1963
+# SUB:	01000001111110000000110110110011
+# Resultado de la instruccion anterior: 2147480812
+# OR:	00000000000010110110000110010011
+# Resultado de la instruccion anterior: -3340
+# ADDI:	10111010101001000000111100010011
+# Resultado de la instruccion anterior: -1079
+# ADDI:	10000011001100010000001000010011
+# Resultado de la instruccion anterior: 2147481635
+# SLT:	00000001101011110010101000010011
+# Resultado de la instruccion anterior: -1
+# SLT:	00000001010101011010110110010011
+# Resultado de la instruccion anterior: -1
+# ADD:	00000001000110110000111110110011
+# Resultado de la instruccion anterior: -3341
+# ADD:	00000001110000001000101100110011
+# Resultado de la instruccion anterior: -2
+# SLT:	00000001101100101010111000010011
+# Resultado de la instruccion anterior: -1
+# AND:	00000001111010110111110000010011
+# Resultado de la instruccion anterior: 30
+# SUB:	01000001100010000000001000110011
+# Resultado de la instruccion anterior: -19
+# OR:	00000000001010011110100010010011
+# Resultado de la instruccion anterior: 2
+# SLT:	00000001101001010010101010010011
+# Resultado de la instruccion anterior: -1
+# ADDI:	11001110100101100000100100010011
+# Resultado de la instruccion anterior: 1246
+# SLT:	00000001001100100010110010010011
+# Resultado de la instruccion anterior: -1
+# SUB:	01000000000101101000010110110011
+# Resultado de la instruccion anterior: 2022
+# SUB:	01000001011110001000011100110011
+# Resultado de la instruccion anterior: 33
+# SLT:	00000001110111111010001000010011
+# Resultado de la instruccion anterior: -1
+# SUB:	01000001101110110000110010110011
+# Resultado de la instruccion anterior: -1
+# ADD:	00000001100110001000100110110011
+# Resultado de la instruccion anterior: 1
+# SUB:	01000001011100100000011100110011
+# Resultado de la instruccion anterior: 30
+# ADD:	00000001001111010000011100110011
+# Resultado de la instruccion anterior: 12
+# OR:	00000001011000111110010010010011
+# Resultado de la instruccion anterior: 23
+# OR:	00000000001000001110010110010011
+# Resultado de la instruccion anterior: -1
+# OR:	00000000101110111110010000010011
+# Resultado de la instruccion anterior: -21
+# ADD:	00000001011001000000011110110011
+# Resultado de la instruccion anterior: -23
+# OR:	00000000001111111110001110010011
+# Resultado de la instruccion anterior: -3341
+# SUB:	01000001011001101000000110110011
+# Resultado de la instruccion anterior: 2023
+# OR:	00000000010000110110110010010011
+# Resultado de la instruccion anterior: 31
+# ADD:	00000001011100010000011000110011
+# Resultado de la instruccion anterior: 2147483601
+# ADD:	00000000110010111000011010110011
+# Resultado de la instruccion anterior: 2147483570
+# AND:	00000000110000011111110000010011
+# Resultado de la instruccion anterior: 4
+# ADDI:	00011111010010001000111100010011
+# Resultado de la instruccion anterior: 502
+# SLT:	00000000010110010010110100010011
+# Resultado de la instruccion anterior: 0
+# ADD:	00000000001001101000010010110011
+# Resultado de la instruccion anterior: -94
+# ADD:	00000000000010111000011110110011
+# Resultado de la instruccion anterior: -31
+# ADDI:	10000110001010110000110000010011
+# Resultado de la instruccion anterior: -1952
+# SUB:	01000000110101011000011000110011
+# Resultado de la instruccion anterior: -2147483571
+# SUB:	01000000111001101000001100110011
+# Resultado de la instruccion anterior: 2147483558
+# AND:	00000001101110010111101100010011
+# Resultado de la instruccion anterior: 26
+# SUB:	01000000111010001000001110110011
+# Resultado de la instruccion anterior: -10
+# OR:	00000000001101010110100010010011
+# Resultado de la instruccion anterior: -1961
+# AND:	00000001000001010111100000010011
+# Resultado de la instruccion anterior: 16
+# SLT:	00000001001110010010000110010011
+# Resultado de la instruccion anterior: 0
+# SUB:	01000000011111111000011100110011
+# Resultado de la instruccion anterior: -3331
+# ADD:	00000001101000001000110110110011
+# Resultado de la instruccion anterior: -1
+# ADD:	00000001110000011000110110110011
+# Resultado de la instruccion anterior: -1
+# ADD:	00000001011000000000001110110011
+# Resultado de la instruccion anterior: 26
+# ADDI:	00000011011111001000001110010011
+# Resultado de la instruccion anterior: 86
+# ADDI:	01111010101111010000111010010011
+# Resultado de la instruccion anterior: 1963
+# OR:	00000000100101110110101000010011
+# Resultado de la instruccion anterior: -3331
+# SUB:	01000001000011010000010110110011
+# Resultado de la instruccion anterior: -16
+# SUB:	01000000011110011000101000110011
+# Resultado de la instruccion anterior: -85
+# AND:	00000001110011011111010100010011
+# Resultado de la instruccion anterior: 28
+# ADDI:	10101100011101001000110000010011
+# Resultado de la instruccion anterior: -1431
+# ADDI:	00110010111001110000000100010011
+# Resultado de la instruccion anterior: -2517
+# OR:	00000000100111111110111000010011
+# Resultado de la instruccion anterior: -3333
+# SUB:	01000001110010011000100010110011
+# Resultado de la instruccion anterior: 3334
+# AND:	00000000010001110111101110010011
+# Resultado de la instruccion anterior: 4
+# OR:	00000000001111010110100100010011
+# Resultado de la instruccion anterior: 3
+# OR:	00000000110110110110010010010011
+# Resultado de la instruccion anterior: 31
+# AND:	00000000000010011111100110010011
+# Resultado de la instruccion anterior: 0
+# SLT:	00000001100001010010100100010011
+# Resultado de la instruccion anterior: 0
+# ADDI:	11110110011001011000111110010011
+# Resultado de la instruccion anterior: -170
+# AND:	00000001000000110111001100010011
+# Resultado de la instruccion anterior: 0
+# OR:	00000000000111101110110110010011
+# Resultado de la instruccion anterior: 1963
+# SLT:	00000001110111110010001110010011
+# Resultado de la instruccion anterior: 0
+# SLT:	00000001001001000010011000010011
+# Resultado de la instruccion anterior: -1
+# OR:	00000000000100101110010000010011
+# Resultado de la instruccion anterior: -9
+# AND:	00000001011110011111110110010011
+# Resultado de la instruccion anterior: 0
+# SLT:	00000000001111111010000110010011
+# Resultado de la instruccion anterior: -1
+# ADDI:	11010100001010000000011100010011
+# Resultado de la instruccion anterior: -686
+# AND:	00000000010001100111100110010011
+# Resultado de la instruccion anterior: 4
+# ADD:	00000000010001001000111010110011
+# Resultado de la instruccion anterior: 30
+# ADD:	00000000110000011000010110110011
+# Resultado de la instruccion anterior: -2
+# OR:	00000001000011000110100100010011
+# Resultado de la instruccion anterior: -1415
+# ADD:	00000001101111010000100000110011
+# Resultado de la instruccion anterior: 0
+# OR:	00000001100110101110001010010011
+# Resultado de la instruccion anterior: -1
+# ADD:	00000000000011111000110110110011
+# Resultado de la instruccion anterior: -170
+# ADDI:	01000000111000110000101110010011
+# Resultado de la instruccion anterior: 1038
+# OR:	00000001100101010110000110010011
+# Resultado de la instruccion anterior: 29
+# SLT:	00000000101000011010010110010011
+# Resultado de la instruccion anterior: 0
+# SLT:	00000000111010001010111100010011
+# Resultado de la instruccion anterior: 0
+# AND:	00000001000101100111010000010011
+# Resultado de la instruccion anterior: 17
+# SLT:	00000001000100110010001110010011
+# Resultado de la instruccion anterior: -1
+# ADD:	00000001100010010000001000110011
+# Resultado de la instruccion anterior: -2846
+# OR:	00000000111100100110110010010011
+# Resultado de la instruccion anterior: -2833
+# OR:	00000001110100010110111000010011
+# Resultado de la instruccion anterior: 2147483645
+# AND:	00000000101100100111001100010011
+# Resultado de la instruccion anterior: 2
+# ADD:	00000000001101100000010110110011
+# Resultado de la instruccion anterior: 28
+# SLT:	00000001010010101010100010010011
+# Resultado de la instruccion anterior: -1
+# SUB:	01000000010000011000001110110011
+# Resultado de la instruccion anterior: 2875
+# SUB:	01000001110101101000110000110011
+# Resultado de la instruccion anterior: 2147483540
+# AND:	00000000000010101111100010010011
+# Resultado de la instruccion anterior: 0
+# ADD:	00000001000001110000010110110011
+# Resultado de la instruccion anterior: -686
+# SLT:	00000001100001010010110100010011
+# Resultado de la instruccion anterior: 0
+# AND:	00000001110011010111011000010011
+# Resultado de la instruccion anterior: 0
+# AND:	00000000111110111111011000010011
+# Resultado de la instruccion anterior: 14
+# SUB:	01000001000111111000000100110011
+# Resultado de la instruccion anterior: -170
+# ADDI:	11010101111010000000000100010011
+# Resultado de la instruccion anterior: -674
+# ADDI:	01001010011111110000101100010011
+# Resultado de la instruccion anterior: 1191
+# SLT:	00000000101100011010100010010011
+# Resultado de la instruccion anterior: 0
+# SLT:	00000001011000100010000010010011
+# Resultado de la instruccion anterior: -1
+# ADDI:	10010011011100110000100110010011
+# Resultado de la instruccion anterior: -1735
+# OR:	00000000000000001110100100010011
+# Resultado de la instruccion anterior: -1
+# SLT:	00000000111010111010010000010011
+# Resultado de la instruccion anterior: 0
+# SLT:	00000001000010111010110100010011
+# Resultado de la instruccion anterior: 0
+# AND:	00000001000001100111100010010011
+# Resultado de la instruccion anterior: 0
+# AND:	00000000010010000111111110010011
+# Resultado de la instruccion anterior: 0
+# SLT:	00000001110110011010111100010011
+# Resultado de la instruccion anterior: -1
+# AND:	00000001100001110111100010010011
+# Resultado de la instruccion anterior: 16
+# SUB:	01000000011101100000101000110011
+# Resultado de la instruccion anterior: -2861
+# OR:	00000001011111011110101100010011
+# Resultado de la instruccion anterior: -169
+# ADDI:	00110000000110010000110110010011
+# Resultado de la instruccion anterior: 768
+# ADD:	00000001100000100000101100110011
+# Resultado de la instruccion anterior: 2147480694
+# SUB:	01000000111011000000100000110011
+# Resultado de la instruccion anterior: -2147483070
+# ADD:	00000000101001100000110000110011
+# Resultado de la instruccion anterior: 42
+# ADDI:	00111111010110101000110100010011
+# Resultado de la instruccion anterior: 1012
+# ADDI:	10100100010100110000101010010011
+# Resultado de la instruccion anterior: -1465
+# ADD:	00000000110011111000011000110011
+# Resultado de la instruccion anterior: 14
+# ADD:	00000001101001111000110010110011
+# Resultado de la instruccion anterior: 981
+# AND:	00000000011010010111001010010011
+# Resultado de la instruccion anterior: 6
+# ADD:	00000000100111110000010000110011
+# Resultado de la instruccion anterior: 30
+# ADDI:	10010001011011011000111000010011
+# Resultado de la instruccion anterior: -1002
+# ADD:	00000001101111101000111000110011
+# Resultado de la instruccion anterior: 798
+# SLT:	00000001111110101010000100010011
+# Resultado de la instruccion anterior: -1
+# SLT:	00000000001000001010010000010011
+# Resultado de la instruccion anterior: -1
+# ADD:	00000001100110011000110000110011
+# Resultado de la instruccion anterior: -754
+# ADDI:	11011000111010011000111000010011
+# Resultado de la instruccion anterior: -2361
+# ADD:	00000000000011010000111010110011
+# Resultado de la instruccion anterior: 1012
+# ADDI:	01001001110101101000001000010011
+# Resultado de la instruccion anterior: -2147482545
+# SUB:	01000000010111111000101000110011
+# Resultado de la instruccion anterior: -6
+# OR:	00000000111011010110110100010011
+# Resultado de la instruccion anterior: 1022
+# AND:	00000001000111011111110010010011
+# Resultado de la instruccion anterior: 0
+# AND:	00000000100110111111110010010011
+# Resultado de la instruccion anterior: 8
+# ADDI:	01010011111111111000101000010011
+# Resultado de la instruccion anterior: 1343
+# AND:	00000000110000010111110010010011
+# Resultado de la instruccion anterior: 0
+# ADDI:	00110101100110010000011110010011
+# Resultado de la instruccion anterior: 856
+# OR:	00000000001110000110001110010011
+# Resultado de la instruccion anterior: -2147483069
+# ADDI:	11111000000011001000011100010011
+# Resultado de la instruccion anterior: -128
+# ADDI:	10001101110110110000010010010011
+# Resultado de la instruccion anterior: 2147478867
+# ADDI:	01010101010111100000000110010011
+# Resultado de la instruccion anterior: -996
+# SUB:	01000000111110101000011010110011
+# Resultado de la instruccion anterior: -2321
+# SLT:	00000000010010010010111100010011
+# Resultado de la instruccion anterior: -1
+# AND:	00000000101101110111001110010011
+# Resultado de la instruccion anterior: 0
+# SUB:	01000000110010011000101110110011
+# Resultado de la instruccion anterior: -1749
+# AND:	00000000010111001111011000010011
+# Resultado de la instruccion anterior: 0
+# ADDI:	01011101010111011000111010010011
+# Resultado de la instruccion anterior: 2261
+# SUB:	01000000011111000000100110110011
+# Resultado de la instruccion anterior: -754
+# SUB:	01000001101011101000010110110011
+# Resultado de la instruccion anterior: 1239
+# SUB:	01000001111000111000101100110011
+# Resultado de la instruccion anterior: 1
+# ADD:	00000000011010110000001010110011
+# Resultado de la instruccion anterior: 3
+# AND:	00000000010100101111001000010011
+# Resultado de la instruccion anterior: 1
+# OR:	00000000101010000110111100010011
+# Resultado de la instruccion anterior: -2147483062
+# SLT:	00000001100111110010101010010011
+# Resultado de la instruccion anterior: -1
+# OR:	00000001010011011110101110010011
+# Resultado de la instruccion anterior: 788
+# ADD:	00000001000100010000110010110011
+# Resultado de la instruccion anterior: -2147483648
+# SUB:	01000000100101001000011110110011
+# Resultado de la instruccion anterior: 0
+# AND:	00000001111011011111001010010011
+# Resultado de la instruccion anterior: 0
+# ADD:	00000000010100110000111100110011
+# Resultado de la instruccion anterior: 2
+# SUB:	01000000101000100000111000110011
+# Resultado de la instruccion anterior: -27
+# SUB:	01000000011001101000110100110011
+# Resultado de la instruccion anterior: -2323
+# ADDI:	00011101010100001000001110010011
+# Resultado de la instruccion anterior: 468
+# ADDI:	11001111111010001000011000010011
+# Resultado de la instruccion anterior: -754
+# OR:	00000001001000100110111100010011
+# Resultado de la instruccion anterior: 19
+# ADD:	00000000101000101000110010110011
+# Resultado de la instruccion anterior: 28
+# SLT:	00000001010001010010111110010011
+# Resultado de la instruccion anterior: 0
+# SLT:	00000001100100100010101110010011
+# Resultado de la instruccion anterior: -1
+# OR:	00000000110100010110111100010011
+# Resultado de la instruccion anterior: 2147483645
+# AND:	00000000100100000111001100010011
+# Resultado de la instruccion anterior: 0
+# ADDI:	00101100101111111000011100010011
+# Resultado de la instruccion anterior: 715
+# ADDI:	11100000110111101000100000010011
+# Resultado de la instruccion anterior: 1762
+# ADD:	00000000001010011000011010110011
+# Resultado de la instruccion anterior: 2147482878
+# ADDI:	11000111011110100000101000010011
+# Resultado de la instruccion anterior: 438
+# AND:	00000000111000011111001100010011
+# Resultado de la instruccion anterior: 12
+# AND:	00000000101011111111110110010011
+# Resultado de la instruccion anterior: 0
+# AND:	00000000000001111111001010010011
+# Resultado de la instruccion anterior: 0
+# ADD:	00000000000000101000011000110011
+# Resultado de la instruccion anterior: 0
+# OR:	00000000010110001110111000010011
+# Resultado de la instruccion anterior: 21
+# AND:	00000000011100001111010110010011
+# Resultado de la instruccion anterior: 7
+# OR:	00000001100111000110001000010011
+# Resultado de la instruccion anterior: -737
+# SLT:	00000000011001111010011100010011
+# Resultado de la instruccion anterior: -1
+# OR:	00000000111101110110101100010011
+# Resultado de la instruccion anterior: -1
+# AND:	00000000000101100111100100010011
+# Resultado de la instruccion anterior: 0
+# OR:	00000001110001001110101010010011
+# Resultado de la instruccion anterior: 2147478879
+# SLT:	00000001011000011010000000010011
+# Resultado de la instruccion anterior: -1
+# ADDI:	00100100011001111000010100010011
+# Resultado de la instruccion anterior: 582
+# ADDI:	00111000101011100000110010010011
+# Resultado de la instruccion anterior: 927
+# SLT:	00000000000010100010000110010011
+# Resultado de la instruccion anterior: 0
+# ADD:	00000001100111010000100110110011
+# Resultado de la instruccion anterior: -1396
+# SUB:	01000000000111101000111010110011
+# Resultado de la instruccion anterior: 2262
+# SUB:	01000000000011110000110000110011
+# Resultado de la instruccion anterior: 2147483645
+# ADDI:	01001110011111101000100100010011
+# Resultado de la instruccion anterior: 3517
+# SLT:	00000000001110010010110000010011
+# Resultado de la instruccion anterior: 0
+# OR:	00000001000101010110010010010011
+# Resultado de la instruccion anterior: 599
+# ADDI:	01010011000010101000010100010011
+# Resultado de la instruccion anterior: 2147480207
+# SUB:	01000000000001101000111100110011
+# Resultado de la instruccion anterior: 2147482878
+# ADD:	00000001111010111000101110110011
+# Resultado de la instruccion anterior: 2147482877
+# SUB:	01000001101000011000010110110011
+# Resultado de la instruccion anterior: 2323
+# OR:	00000000010010100110010110010011
+# ** Note: $finish    : /mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/mp6134/tutorial1/cpu_tb.sv(56)
+#    Time: 4 us  Iteration: 0  Instance: /cpu_tb
+# End time: 16:43:33 on Nov 07,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
