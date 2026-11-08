@@ -1,0 +1,464 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+!s11f vlog 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/mnt/vol_NFS_rh003/estudiantes/PEREZ-NOEL/Verificacion-Funcional/rtl/tutorial2
+vadder32
+Z2 2./cpu.sv|./alu.sv
+Z3 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z4 !s110 1794107072
+!i10b 1
+!s100 _8T4H<coGhHBajXem:g]e3
+ILQeW=O[znY@akMagD[k6O0
+S1
+R1
+Z5 w1794104250
+Z6 8./cpu.sv
+Z7 F./cpu.sv
+!i122 4
+L0 160 9
+Z8 VDg1SIo80bB@j0V0VzS_@n1
+Z9 OL;L;2023.3;77
+r1
+!s85 0
+31
+Z10 !s108 1794107072.000000
+Z11 !s107 ./alu.sv|./cpu.sv|
+Z12 !s90 -sv|-f|./dut.f|
+!i113 0
+Z13 o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z14 tCvgOpt 0
+vadder_ripple_carry
+R2
+R3
+R4
+!i10b 1
+!s100 [k?``RWkdFDo;oJnn9YIi2
+Ihz;0=R;U45[RlI3[HE]dk0
+S1
+R1
+Z15 w1794081818
+Z16 8./alu.sv
+Z17 F./alu.sv
+!i122 4
+L0 73 42
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+valu
+R2
+R3
+R4
+!i10b 1
+!s100 HCfR;=c@YAH]^mzl2PUkz1
+I7G>ShePh`A8e>Bn39jln61
+S1
+R1
+R15
+R16
+R17
+!i122 4
+L0 9 48
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+vcontrol_unit
+R2
+R3
+R4
+!i10b 1
+!s100 c6;M7G0@B]XTeI;^2R1^03
+If9dUdzAEzC?e1I_I<=OJd0
+S1
+R1
+R5
+R6
+R7
+!i122 4
+L0 322 125
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+vcpu
+R2
+R3
+R4
+!i10b 1
+!s100 UOoF0;>OV]CFaJniKoM<L3
+IlY;n<_DF5Yd_LGl;fE5Z^1
+S1
+R1
+R5
+R6
+R7
+!i122 4
+L0 9 133
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Ycpu_bfm
+Z18 2./cpu_pkg.sv|./cpu_bfm.sv|./top.sv
+R3
+Z19 DXx4 work 7 cpu_pkg 0 22 nZK0H[EW_Rc`Jij7=UE;k0
+Z20 !s110 1794107073
+!i10b 1
+!s100 hcZLLNi2Mgj_TZC]HOnzY3
+Io^L<;a<zkjSEYA=aCIi@b3
+S1
+R1
+w1794105443
+8./cpu_bfm.sv
+F./cpu_bfm.sv
+Z21 Fcpu_macros.svh
+!i122 5
+L0 4 0
+R8
+R9
+r1
+!s85 0
+31
+R10
+Z22 !s107 ./tb_classes/testbench.svh|./tb_classes/scoreboard.svh|./tb_classes/tester.svh|./tb_classes/coverage.svh|cpu_macros.svh|./top.sv|./cpu_bfm.sv|./cpu_pkg.sv|
+Z23 !s90 -sv|-f|./tb.f|
+!i113 0
+R13
+Z24 !s92 -sv +incdir+./tb_classes -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R14
+Xcpu_pkg
+R18
+R3
+R20
+!i10b 1
+!s100 R?W>icK^znPm6j@dRX`G;2
+InZK0H[EW_Rc`Jij7=UE;k0
+S1
+R1
+w1794105493
+8./cpu_pkg.sv
+F./cpu_pkg.sv
+!i122 5
+L0 1 0
+VnZK0H[EW_Rc`Jij7=UE;k0
+R9
+r1
+!s85 0
+31
+R10
+R22
+R23
+!i113 0
+R13
+R24
+R14
+vdmem
+R2
+R3
+R4
+!i10b 1
+!s100 OM81?ZIf8;McA[9>?2C1Y2
+I5<@<>[oQY?FZXSnBiO4L=3
+S1
+R1
+R5
+R6
+R7
+!i122 4
+L0 204 30
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+vExtend
+R2
+R3
+R4
+!i10b 1
+!s100 S?B6Ye_d`GP0>BjajXbj<0
+Id;52PPHhT^SBg?dUcc^^n3
+S1
+R1
+R5
+R6
+R7
+!i122 4
+L0 237 19
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+n@extend
+vfull_adder
+R2
+R3
+R4
+!i10b 1
+!s100 AD>L[W;Ni=eeU;n[E3i_60
+Ig5Lln2WKcaZ<78ZC28mmC3
+S1
+R1
+R15
+R16
+R17
+!i122 4
+L0 59 12
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+vmux32
+R2
+R3
+R4
+!i10b 1
+!s100 o8z5PT7z=JX?E?Vf3?]^f1
+IYNWW4XEZCP98SfVzi79>B1
+S1
+R1
+R5
+R6
+R7
+!i122 4
+L0 286 10
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+vmux_alu_out
+R2
+R3
+R4
+!i10b 1
+!s100 znYJeBO6h1?;F^zlPn^zn3
+INkAkEZ0ZSTTFCdJ^VW1<Z3
+S1
+R1
+R5
+R6
+R7
+!i122 4
+L0 298 22
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+vmux_out
+R2
+R3
+R4
+!i10b 1
+!s100 IT1Q80ab9eiD;B8n30ToY3
+Ih48T;lIcLagcIk>YggfnL2
+S1
+R1
+R15
+R16
+R17
+!i122 4
+L0 117 24
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+vpc
+R2
+R3
+R4
+!i10b 1
+!s100 ?i7ShYaUzO1z7_3EX2=IM0
+I1:5aClA>1d]AC?CzH>h1_2
+S1
+R1
+R5
+R6
+R7
+!i122 4
+L0 145 13
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+vregister_bank
+R2
+R3
+R4
+!i10b 1
+!s100 G6NYOb^:^BeDGbHWQF1dU3
+I<18bV9Yc2LAYPHM_RhZ=22
+S1
+R1
+R5
+R6
+R7
+!i122 4
+L0 172 28
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+vtop
+R18
+R3
+R19
+R20
+!i10b 1
+!s100 keE<boQP?VGfTJa19MGRE0
+Imgalb^S9Ig2Mj:ZUz>na`1
+S1
+R1
+w1794106899
+8./top.sv
+F./top.sv
+R21
+F./tb_classes/coverage.svh
+F./tb_classes/tester.svh
+F./tb_classes/scoreboard.svh
+F./tb_classes/testbench.svh
+!i122 5
+L0 3 151
+R8
+R9
+r1
+!s85 0
+31
+R10
+R22
+R23
+!i113 0
+R13
+R24
+R14
+Ttop_optimized
+R20
+VJYd^1fbV0m^]0Bj61<3>k3
+04 3 4 work top fast 0
+!s102 +cover=sbfec
+R0
+!s12b OEM100
+!s124 OEM100
+o+cover=sbfec
+R14
+ntop_optimized
+OL;O;2023.3;77
+vZeroExt
+R2
+R3
+R4
+!i10b 1
+!s100 _>[QGm2S>b;0^6T<[BIc33
+IQ9ezVS=A[ZO3Ki>hDNK@X0
+S1
+R1
+R15
+R16
+R17
+!i122 4
+L0 143 9
+R8
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 0
+R13
+R14
+n@zero@ext

@@ -1,0 +1,197 @@
+source ./setup.sh
+vlib work
+vmap work work
+vlog -sv -f ./dut.f
+vlog -sv -f ./tb.f
+vopt top -o top_optimized +cover=sbfec
+vsim -sv_seed random -c top_optimized -coverage -do "set NoQuitOnFinish 1; onbreak {resume}; log /* -r; run -all; coverage save -onexit coverage.ucdb; quit;"
+#vcover report coverage.ucdb
+** Warning: (vlib-34) Library already exists at "work".
+Errors: 0, Warnings: 1
+QuestaSim-64 vmap 2023.3 Lib Mapping Utility 2023.07 Jul 17 2023
+vmap work work 
+Modifying modelsim.ini
+QuestaSim-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+Start time: 21:04:32 on Nov 07,2026
+vlog -sv -f ./dut.f 
+-- Compiling module cpu
+-- Compiling module pc
+-- Compiling module adder32
+-- Compiling module register_bank
+-- Compiling module dmem
+-- Compiling module Extend
+-- Compiling module mux32
+-- Compiling module mux_alu_out
+-- Compiling module control_unit
+-- Compiling module alu
+-- Compiling module full_adder
+-- Compiling module adder_ripple_carry
+-- Compiling module mux_out
+-- Compiling module ZeroExt
+
+Top level modules:
+	cpu
+End time: 21:04:32 on Nov 07,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+QuestaSim-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+Start time: 21:04:32 on Nov 07,2026
+vlog -sv -f ./tb.f 
+-- Compiling package cpu_pkg
+-- Compiling interface cpu_bfm
+-- Importing package cpu_pkg
+-- Compiling module top
+
+Top level modules:
+	top
+End time: 21:04:33 on Nov 07,2026, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0
+QuestaSim-64 vopt 2023.3 Compiler 2023.07 Jul 17 2023
+Start time: 21:04:33 on Nov 07,2026
+vopt top -o top_optimized "+cover=sbfec" 
+
+Top level modules:
+	top
+
+Analyzing design...
+-- Loading module top
+-- Importing package cpu_pkg
+-- Loading interface cpu_bfm
+-- Loading module cpu
+-- Loading module pc
+-- Loading module mux32
+-- Loading module adder32
+-- Loading module register_bank
+-- Loading module Extend
+-- Loading module alu
+-- Loading module adder_ripple_carry
+-- Loading module mux_out
+-- Loading module ZeroExt
+-- Loading module dmem
+-- Loading module mux_alu_out
+-- Loading module control_unit
+-- Loading module full_adder
+Incremental compilation check found no design-units have changed.
+Optimized design name is top_optimized
+End time: 21:04:33 on Nov 07,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+Reading pref.tcl
+
+# 2023.3
+
+# vsim -sv_seed random -c top_optimized -coverage -do "set NoQuitOnFinish 1; onbreak {resume}; log /* -r; run -all; coverage save -onexit coverage.ucdb; quit;" 
+# Start time: 21:04:36 on Nov 07,2026
+# //  Questa Sim-64
+# //  Version 2023.3 linux_x86_64 Jul 17 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.cpu_pkg(fast)
+# Loading work.top(fast)
+# Loading work.cpu_bfm(fast)
+# Sv_Seed = 1460681125
+# set NoQuitOnFinish 1
+# 1
+#  onbreak {resume}
+#  Warning: onbreak command for use within macro
+#  log /* -r
+#  run -all
+# ADD:	00000001111111100000001010110011
+# PASSED: rs1: 28  rs2: 31  imm: 3019  op: ADD  result: 0x0  expected: 0x0
+# ADDI:	11100101001000111000011000010011
+# PASSED: rs1: 7  rs2: 10  imm: 3666  op: ADDI  result: 0xfffffe52  expected: 0xfffffe52
+# SUB:	01000001001000001000011100110011
+# PASSED: rs1: 1  rs2: 18  imm: 993  op: SUB  result: 0x0  expected: 0x0
+# AND:	00000001111001100111111110110011
+# PASSED: rs1: 12  rs2: 30  imm: 2426  op: AND  result: 0x0  expected: 0x0
+# SLT:	00000001111010011010110010110011
+# PASSED: rs1: 19  rs2: 30  imm: 2395  op: SLT  result: 0x0  expected: 0x0
+# SLT:	00000001001001001010010010110011
+# PASSED: rs1: 9  rs2: 18  imm: 542  op: SLT  result: 0x0  expected: 0x0
+# SUB:	01000001010111010000100000110011
+# PASSED: rs1: 26  rs2: 21  imm: 3680  op: SUB  result: 0x0  expected: 0x0
+# ADD:	00000001111100010000011100110011
+# PASSED: rs1: 2  rs2: 31  imm: 2336  op: ADD  result: 0x7ffffff0  expected: 0x7ffffff0
+# ADDI:	10111110010110110000010100010011
+# PASSED: rs1: 22  rs2: 22  imm: 3045  op: ADDI  result: 0xfffffbe5  expected: 0xfffffbe5
+# OR:	00000001001010010110111100110011
+# PASSED: rs1: 18  rs2: 18  imm: 1985  op: OR  result: 0x0  expected: 0x0
+# SUB:	01000001100101110000100000110011
+# PASSED: rs1: 14  rs2: 25  imm: 2361  op: SUB  result: 0x7ffffff0  expected: 0x7ffffff0
+# OR:	00000000110010110110110000110011
+# PASSED: rs1: 22  rs2: 12  imm: 620  op: OR  result: 0xfffffe52  expected: 0xfffffe52
+# SUB:	01000001111000010000111100110011
+# PASSED: rs1: 2  rs2: 30  imm: 3604  op: SUB  result: 0x7ffffff0  expected: 0x7ffffff0
+# OR:	00000000000011110110010100110011
+# PASSED: rs1: 30  rs2: 0  imm: 3131  op: OR  result: 0x7ffffff0  expected: 0x7ffffff0
+# ADDI:	10010111101110000000110110010011
+# PASSED: rs1: 16  rs2: 0  imm: 2427  op: ADDI  result: 0x7ffff96b  expected: 0x7ffff96b
+# OR:	00000001001110101110000110110011
+# PASSED: rs1: 21  rs2: 19  imm: 3605  op: OR  result: 0x0  expected: 0x0
+# ADDI:	10011000110001001000010110010011
+# PASSED: rs1: 9  rs2: 4  imm: 2444  op: ADDI  result: 0xfffff98c  expected: 0xfffff98c
+# SUB:	01000001011000001000110110110011
+# PASSED: rs1: 1  rs2: 22  imm: 2124  op: SUB  result: 0x0  expected: 0x0
+# AND:	00000000111001100111010100110011
+# PASSED: rs1: 12  rs2: 14  imm: 3632  op: AND  result: 0x7ffffe50  expected: 0x7ffffe50
+# ADD:	00000001111000000000100110110011
+# PASSED: rs1: 0  rs2: 30  imm: 2929  op: ADD  result: 0x7ffffff0  expected: 0x7ffffff0
+# OR:	00000001111001110110011010110011
+# PASSED: rs1: 14  rs2: 30  imm: 1070  op: OR  result: 0x7ffffff0  expected: 0x7ffffff0
+# ADDI:	00010001110100111000111110010011
+# PASSED: rs1: 7  rs2: 2  imm: 285  op: ADDI  result: 0x11d  expected: 0x11d
+# ADDI:	00000000111000111000001110010011
+# PASSED: rs1: 7  rs2: 15  imm: 14  op: ADDI  result: 0xe  expected: 0xe
+# OR:	00000001000000110110101110110011
+# PASSED: rs1: 6  rs2: 16  imm: 2906  op: OR  result: 0x7ffffff0  expected: 0x7ffffff0
+# SUB:	01000001100011101000101000110011
+# PASSED: rs1: 29  rs2: 24  imm: 1621  op: SUB  result: 0x1ae  expected: 0x1ae
+# SUB:	01000001110100000000000010110011
+# PASSED: rs1: 0  rs2: 29  imm: 153  op: SUB  result: 0x0  expected: 0x0
+# ADDI:	11100111101011001000111000010011
+# PASSED: rs1: 25  rs2: 24  imm: 3706  op: ADDI  result: 0xfffffe7a  expected: 0xfffffe7a
+# OR:	00000000100101000110001010110011
+# PASSED: rs1: 8  rs2: 9  imm: 3913  op: OR  result: 0x0  expected: 0x0
+# AND:	00000001011110011111001010110011
+# PASSED: rs1: 19  rs2: 23  imm: 310  op: AND  result: 0x7ffffff0  expected: 0x7ffffff0
+# ADD:	00000000110100001000010100110011
+# PASSED: rs1: 1  rs2: 13  imm: 931  op: ADD  result: 0x7ffffff0  expected: 0x7ffffff0
+# ADD:	00000001111101011000100110110011
+# PASSED: rs1: 11  rs2: 31  imm: 1212  op: ADD  result: 0xfffffaa9  expected: 0xfffffaa9
+# ADDI:	01010010101010100000101100010011
+# PASSED: rs1: 20  rs2: 29  imm: 1322  op: ADDI  result: 0x6d8  expected: 0x6d8
+# ADD:	00000001110100011000100110110011
+# PASSED: rs1: 3  rs2: 29  imm: 2735  op: ADD  result: 0x0  expected: 0x0
+# SLT:	00000001100100100010100010110011
+# PASSED: rs1: 4  rs2: 25  imm: 1403  op: SLT  result: 0x0  expected: 0x0
+# SUB:	01000000001001100000010100110011
+# PASSED: rs1: 12  rs2: 2  imm: 2354  op: SUB  result: 0x7ffffe62  expected: 0x7ffffe62
+# OR:	00000000101001011110011010110011
+# PASSED: rs1: 11  rs2: 10  imm: 977  op: OR  result: 0xffffffee  expected: 0xffffffee
+# SLT:	00000000010011110010000110110011
+# PASSED: rs1: 30  rs2: 4  imm: 2975  op: SLT  result: 0x0  expected: 0x0
+# AND:	00000000101100111111010110110011
+# PASSED: rs1: 7  rs2: 11  imm: 2624  op: AND  result: 0xc  expected: 0xc
+# AND:	00000001111101010111001110110011
+# PASSED: rs1: 10  rs2: 31  imm: 682  op: AND  result: 0x0  expected: 0x0
+# AND:	00000001010100101111001010110011
+# PASSED: rs1: 5  rs2: 21  imm: 3449  op: AND  result: 0x0  expected: 0x0
+# ** Note: $finish    : ./tb_classes/tester.svh(14)
+#    Time: 410 ns  Iteration: 1  Region: /top/testbench::execute
+# 1
+# Break in Task top/tester::execute at ./tb_classes/tester.svh line 14
+# Stopped at ./tb_classes/tester.svh line 14
+#  coverage save -onexit coverage.ucdb
+#  quit
+# Saving coverage database on exit...
+# End time: 21:04:37 on Nov 07,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
